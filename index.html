@@ -1,103 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mia Albert Photography</title>
+    <meta charset="UTF-8"> <!-- Sets character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering on mobile devices -->
+    <title>Mia Albert Photography</title> <!-- Title of the webpage -->
+    
+    <!-- Importing fonts from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS for styling the webpage -->
     <style>
+        /* General styles for body */
         body {
-            font-family: "Frank Ruhl Libre", serif;
-            background-color: #ffffff;
-            color: #333;
-            margin: 0;
-            padding: 0;
+            font-family: "Frank Ruhl Libre", serif; /* Font from Google Fonts */
+            background-color: #ffffff; /* White background color */
+            color: #333; /* Dark gray text color */
+            margin: 0; /* Removes default margin */
+            padding: 0; /* Removes default padding */
         }
 
+        /* Header styles */
         header {
-            background-color: #E6E6FA; /* Light Purple */
-            color: #333;
-            text-align: center;
-            padding: 20px;
+            background-color: #E6E6FA; /* Light purple background color */
+            color: #333; /* Dark gray text color */
+            text-align: center; /* Centers text in the header */
+            padding: 20px; /* Adds padding around the header */
         }
 
+        /* Navigation bar styles */
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #98FB98; /* Light Green */
-            padding: 10px;
+            display: flex; /* Flexbox layout for navigation items */
+            justify-content: center; /* Centers navigation items horizontally */
+            background-color: #98FB98; /* Light green background color */
+            padding: 10px; /* Adds padding around the nav items */
+            flex-wrap: wrap; /* Enables wrapping for smaller screens */
         }
 
+        /* Navigation link styles */
         nav a {
-            color: #333;
-            text-decoration: none;
-            margin: 0 15px;
+            color: #333; /* Dark gray text color */
+            text-decoration: none; /* Removes underline from links */
+            margin: 0 15px; /* Adds horizontal margin between links */
         }
 
+        /* Section styles for 'About Me', 'Gallery', and 'Contact' */
         .about, .gallery, .contact {
-            padding: 20px;
-            text-align: center;
+            padding: 20px; /* Adds padding inside the sections */
+            text-align: center; /* Centers text in these sections */
         }
 
+        /* Styles for images in the gallery */
         .gallery img {
-            width: 200px;
-            height: auto;
-            margin: 10px;
-            border: 2px solid #E6E6FA; /* Light Purple */
+            width: 200px; /* Sets the width of images */
+            height: auto; /* Maintains aspect ratio */
+            margin: 10px; /* Adds margin around each image */
+            border: 2px solid #E6E6FA; /* Adds a light purple border around images */
         }
 
+        /* Footer styles */
         footer {
-            background-color: #E6E6FA; /* Light Purple */
-            color: #333;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            background-color: #E6E6FA; /* Light purple background color */
+            color: #333; /* Dark gray text color */
+            text-align: center; /* Centers text in the footer */
+            padding: 10px; /* Adds padding inside the footer */
+            position: fixed; /* Fixes the footer at the bottom of the page */
+            bottom: 0; /* Positions the footer at the bottom */
+            width: 100%; /* Ensures the footer spans the full width of the page */
         }
 
+        /* Styles for social media links */
         .social-links a {
-            margin: 0 10px;
-            color: #333;
-            text-decoration: none;
+            margin: 0 10px; /* Adds horizontal margin between social links */
+            color: #333; /* Dark gray text color */
+            text-decoration: none; /* Removes underline from links */
+        }
+
+        /* Media query for responsiveness on smaller screens */
+        @media (max-width: 600px) {
+            nav a {
+                display: block; /* Stacks navigation links vertically */
+                margin: 10px 0; /* Adds vertical margin between links */
+            }
+
+            footer {
+                position: static; /* Makes footer static to prevent overlapping on small screens */
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Header section with title -->
     <header>
         <h1>Mia Albert Photography</h1>
     </header>
 
+    <!-- Navigation bar with links to different sections -->
     <nav>
         <a href="#about">About Me</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
     </nav>
 
+    <!-- About Me section -->
     <section id="about" class="about">
         <h2>About Me</h2>
-        <p>Hello! I'm Mia Albert, a passionate photographer who focuses on capturing iconic sports moments specifcally tennis. My work focuses on telling stories through my lens. I hope you enjoy exploring my collection!</p>
+        <p>Hello! I'm Mia Albert, a passionate photographer who focuses on capturing iconic sports moments, specifically in tennis. My work tells stories through my lens. I hope you enjoy exploring my collection!</p>
     </section>
 
+    <!-- Photo Gallery section -->
     <section id="gallery" class="gallery">
         <h2>Photo Gallery</h2>
         <!-- Replace with your photos -->
-        <img src="images/IMG_1794_novak_djokovic.jpg" alt="Novak Djokovic">
-        <img src="images/IMG_1422_stefanos_tsitsipas.jpg" alt="Stefanos Tsitsipas">
-        <img src="images/IMG_7809_sascha_zverev.jpg" alt="Alexander Sascha Zverev">
+    
+        <img src="images/IMG_1422_stefanos_tsitsipas.jpg" alt="Photograph of Stefanos Tsitsipas during a tennis match">
+        <img src="images/IMG_1794_novak_djokovic.jpg" alt="Photograph of Novak Djokovic during a tennis match">
+        <img src="images/IMG_7809_sascha_zverev.jpg" alt="Photograph of Alexander Sascha Zverev during a tennis match">
     </section>
 
+    <!-- Contact section -->
     <section id="contact" class="contact">
         <h2>Contact</h2>
         <p>Feel free to reach out for collaborations or inquiries:</p>
         <p>Email: <a href="mailto:miaseliaalbert@gmail.com">miaseliaalbert@gmail.com</a></p>
     </section>
 
+    <!-- Footer section with social media links -->
     <footer>
         <div class="social-links">
-            <a href="https://www.instagram.com/miaalbertphotography?igsh=ZGtkaHBmdzhvOWpt&utm_source=qr" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/miaalbertphotography" target="_blank">Instagram</a>
             <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>
             <a href="https://www.twitter.com/yourprofile" target="_blank">Twitter</a>
         </div>
