@@ -45,17 +45,25 @@
             margin: 0 15px; /* Adds horizontal margin between links */
         }
 
-        /* Section styles for 'About Me', 'Gallery', and 'Contact' */
-        .about, .gallery, .contact {
+        /* Section styles for 'About Me' and 'Contact' */
+        .about, .contact {
             padding: 20px; /* Adds padding inside the sections */
             text-align: center; /* Centers text in these sections */
+        }
+
+        /* Styles for the gallery section */
+        .gallery {
+            display: flex; /* Flexbox layout for gallery images */
+            justify-content: center; /* Centers images horizontally */
+            gap: 20px; /* Adds spacing between images */
+            padding: 20px; /* Adds padding around the gallery */
+            flex-wrap: wrap; /* Enables wrapping if screen is small */
         }
 
         /* Styles for images in the gallery */
         .gallery img {
             width: 200px; /* Sets the width of images */
             height: auto; /* Maintains aspect ratio */
-            margin: 10px; /* Adds margin around each image */
             border: 2px solid #E6E6FA; /* Adds a light purple border around images */
         }
 
@@ -87,6 +95,11 @@
             footer {
                 position: static; /* Makes footer static to prevent overlapping on small screens */
             }
+
+            .gallery {
+                flex-direction: column; /* Stacks images vertically on smaller screens */
+                align-items: center; /* Centers images in column layout */
+            }
         }
     </style>
 </head>
@@ -113,7 +126,6 @@
     <section id="gallery" class="gallery">
         <h2>Photo Gallery</h2>
         <!-- Replace with your photos -->
-    
         <img src="images/IMG_1422_stefanos_tsitsipas.jpg" alt="Photograph of Stefanos Tsitsipas during a tennis match">
         <img src="images/IMG_1794_novak_djokovic.jpg" alt="Photograph of Novak Djokovic during a tennis match">
         <img src="images/IMG_7809_sascha_zverev.jpg" alt="Photograph of Alexander Sascha Zverev during a tennis match">
